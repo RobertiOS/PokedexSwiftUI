@@ -15,7 +15,7 @@ struct PokedexListView: View {
         NavigationView {
             VStack {
                 if pokemonViewModel.isLoading {
-                    ProgressView()
+                    LoadingPokeballView()
                 } else {
                     List(pokemonViewModel.pokemon ?? [], id: \.self) { pokemon in
                         if let pokemonUrl = pokemon.url {

@@ -18,7 +18,7 @@ struct PokemonInformationView: View {
                         .resizable()
                         .frame(width: 170, height: 170)
                 } placeholder: {
-                    ProgressView()
+                    LoadingPokeballView()
                         .frame(width: 170, height: 170)
                 }
                 
